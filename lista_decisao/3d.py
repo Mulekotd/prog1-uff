@@ -4,7 +4,6 @@ c = int(input("Insira o valor c: "))
 
 total = 0
 
-# Caso todos sejam iguais, a soma permanece 0
 if a == b == c:
     pass
 else:
@@ -14,5 +13,10 @@ else:
         total += b
     if c != a and c != b:
         total += c
+
+# Leio três variáveis 'a', 'b', 'c'
+# Atribuo ao 'total' o valor 0 como padrão
+# Caso 'a' = 'b' = 'c', o total permanece zero
+# Se não, verifico a unicidade de cada variável e acumulo ao total
 
 print(f"Soma {total}")

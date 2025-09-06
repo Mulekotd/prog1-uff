@@ -22,4 +22,9 @@ if rest >= 1:
     penny = rest
     rest = 0
 
+# Leio o valor em centavos e guardo em 'n'
+# Uso 'rest' como auxiliar para ir atualizando o que sobra
+# Depois, faço verificações em ordem decrescente (100c → 50c → 25c → 1c)
+# Em cada passo, calculo quantas moedas cabem (divisão inteira) e atualizo o resto
+
 print(f"{dollar} moeda(s) de 1 real, {half_dollar} de 50c, {quarter} de 25c, {penny} de 1c.")

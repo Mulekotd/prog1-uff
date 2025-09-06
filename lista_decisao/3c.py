@@ -1,7 +1,9 @@
-color = input("Insira a cor: ")
+color = input("Insira uma cor: ")
 
-# Uso .lower() para converter a entrada para minúscula,
-# garantindo que a comparação seja mais precisa
+# Leio a variável 'color'
+# Converto a entrada para minúsculo com .lower()
+# Utilizo a estrutura match case para verificar a cor inserida e retornar o valor correspondente
+
 match color.lower():
     case "verde":
         print("R$ 10,00")
