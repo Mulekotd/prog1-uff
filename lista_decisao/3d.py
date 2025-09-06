@@ -16,7 +16,7 @@ else:
 
 # Leio três variáveis 'a', 'b', 'c'
 # Atribuo ao 'total' o valor 0 como padrão
-# Caso 'a' = 'b' = 'c', o total permanece zero
-# Se não, verifico a unicidade de cada variável e acumulo ao total
+# Se todos os valores forem iguais, o total permanece 0
+# Caso contrário, somo ao 'total' apenas os valores únicos
 
 print(f"Soma {total}")
