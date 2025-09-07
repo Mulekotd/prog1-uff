@@ -13,5 +13,3 @@ match color.lower():
         print("R$ 30,00")
     case "vermelho":
         print("R$ 40,00")
-    case _:
-        print(color)
