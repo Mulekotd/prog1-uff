@@ -5,7 +5,7 @@ c = int(input("Insira o valor c: "))
 total = 0
 
 if a == b == c:
-    pass
+    total = 0
 else:
     if a != b and a != c:
         total += a
