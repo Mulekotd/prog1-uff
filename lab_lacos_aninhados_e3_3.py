@@ -17,9 +17,9 @@ while True:
         elif abs(number - password) <= 3:
             print("TA QUENTE!")
         elif number > password:
-            print(f"O número secreto é menor! ({tries} tentativas)")
+            print(f"O número secreto é menor! ({9 - tries} tentativas)")
         else:
-            print(f"O número secreto é maior! ({tries} tentativas)")
+            print(f"O número secreto é maior! ({9 - tries} tentativas)")
 
         tries += 1
 
