@@ -2,12 +2,12 @@ import random
 
 while True:
     password = random.randint(0, 100)
-    tries = 10
+    tries = 0
     won = False
 
     print("Tente adivinhar o número secreto de 0 a 100!")
 
-    while tries > 0:
+    while tries < 10:
         number = int(input(f"Número: "))
 
         if number == password:
@@ -17,11 +17,11 @@ while True:
         elif abs(number - password) <= 3:
             print("TA QUENTE!")
         elif number > password:
-            print(f"O número secreto é menor! ({tries - 1} tentativas)")
+            print(f"O número secreto é menor! ({tries} tentativas)")
         else:
-            print(f"O número secreto é maior! ({tries - 1} tentativas)")
+            print(f"O número secreto é maior! ({tries} tentativas)")
 
-        tries -= 1
+        tries += 1
 
     if not won:
         print(f"Você perdeu! O número secreto era {password}.")
