@@ -1,11 +1,11 @@
 import random
 
 while True:
-    password = random.randint(0, 100)
+    password = random.randint(1, 100)
     tries = 0
     won = False
 
-    print("Tente adivinhar o número secreto de 0 a 100!")
+    print("Tente adivinhar o número secreto de 1 a 100!")
 
     while tries < 10:
         number = int(input(f"Número: "))
