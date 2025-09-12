@@ -13,11 +13,13 @@ while tries < 10:
         print(f"Você acertou! O número secreto é: {password} com {tries} tentativas")
         won = True
         break
-    else:        
+    else:
+        remaining_attempts = 9 - tries
+
         if number > password:
-            print(f"O número secreto é menor! (faltam {9 - tries} tentativas)")
+            print(f"O número secreto é menor! ({remaining_attempts} tentativas)")
         else:
-            print(f"O número secreto é maior! (faltam {9 - tries} tentativas)")
+            print(f"O número secreto é maior! ({remaining_attempts} tentativas)")
 
     tries += 1
 

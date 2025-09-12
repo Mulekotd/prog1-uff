@@ -16,10 +16,13 @@ while True:
             break
         elif abs(number - password) <= 3:
             print("TA QUENTE!")
-        elif number > password:
-            print(f"O número secreto é menor! ({9 - tries} tentativas)")
         else:
-            print(f"O número secreto é maior! ({9 - tries} tentativas)")
+            remaining_attempts = 9 - tries
+
+            if number > password:
+                print(f"O número secreto é menor! ({remaining_attempts} tentativas)")
+            else:
+                print(f"O número secreto é maior! ({remaining_attempts} tentativas)")
 
         tries += 1
 
