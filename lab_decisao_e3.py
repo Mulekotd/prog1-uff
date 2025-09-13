@@ -33,7 +33,7 @@ else:
     elif d2 == d3 and d2 != d1:
         print("Multiplicação =", d2 * d3)
     elif d1 == d2 == d3:
-        print("Multiplicação =", d1 * d2 * d3)  # todos iguais
+        print("Multiplicação =", d1 * d2 * d3)
     else:
         # Caso 3: nenhum válido
         print("não deu")

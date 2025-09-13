@@ -10,14 +10,14 @@ while True:
     count = 0
     current = first
     
-    # soma n ímpares consecutivos
+    # Soma n ímpares consecutivos
     while count < n:
         total += current
         current += 2
         count += 1
     
     if total == n3:
-        # imprime a sequência
+        # Imprime a sequência
         for k in range(n):
             print(first + 2 * k)
         break

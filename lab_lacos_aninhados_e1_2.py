@@ -1,10 +1,10 @@
 n = int(input("n = "))
 
 while True:
-    # valores iniciais da série
+    # Valores iniciais da série
     x, y, z = 2, 5, 8
 
-    # imprime os três primeiros, se n for >= 1, 2 ou 3
+    # Imprime os três primeiros, se n for >= 1, 2 ou 3
     if n >= 1:
         print(x)
     if n >= 2:
@@ -14,12 +14,12 @@ while True:
 
     i = 3
 
-    # gera os próximos até alcançar n
+    # Gera os próximos até alcançar n
     while i < n:
         next_num = z - (x + y)
         print(next_num)
 
-        # avança a janela de cálculo
+        # Avança a janela de cálculo
         x, y, z = y, z, next_num
         i += 1
 
