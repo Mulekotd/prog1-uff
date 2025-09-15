@@ -1,10 +1,8 @@
+# Lê a variável 'color'
 color = input("Insira uma cor: ")
 
-# Leio a variável 'color'
-# Converto a entrada para minúsculo com .lower()
-# Utilizo a estrutura match case para verificar a cor inserida e retornar o valor correspondente
-
-match color.lower():
+# Verifica a cor inserida e retornar o valor correspondente
+match color.lower(): # Converte a entrada para minúsculo com .lower()
     case "verde":
         print("R$ 10,00")
     case "azul":

@@ -27,7 +27,7 @@ else:
             print(f"\n{b}, {a}, {c}")
         else:
             print(f"\n{b}, {c}, {a}")
-    else:  # c é o maior
+    else:
         if a >= b:
             print(f"\n{c}, {a}, {b}")
         else:

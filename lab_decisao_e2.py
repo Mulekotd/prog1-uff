@@ -1,5 +1,5 @@
 sb = float(input("Insira o seu salário bruto: "))
-sl = sb  # valor padrão, sem desconto
+sl = sb  # Valor padrão, sem desconto
 
 if sb >= 500 and sb < 800:
     sl = sb * (1 - 0.10)
