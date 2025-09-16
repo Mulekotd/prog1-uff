@@ -10,7 +10,7 @@ while player_victories < 3 and machine_victories < 3:
 
     print("Você jogou:", player, "x Máquina jogou:", machine)
 
-    if player == machine: # Caso as jogas sejam identicas
+    if player == machine: # Se as jogas forem identicas
         print("Empate!")
     elif (player == 0 and (machine == 3 or machine == 4)) or \
          (player == 1 and (machine == 0 or machine == 4)) or \
