@@ -8,7 +8,7 @@ y = random.randint(1, 100)
 misses = 0
 hits = 0
 
-# Executa um laço de repetição enquanto a quantidade de acertos for menor que três
+# Enquanto a quantidade de acertos for menor que três
 while hits < 3:
     # Pergunta ao usuário qual o valor do produto de 'x' e 'y'
     print("quanto é o poder x multiplicado pela resistencia y da carta ?")

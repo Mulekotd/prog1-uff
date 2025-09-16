@@ -10,7 +10,7 @@ while y != 0:
     rest = x % y
     x, y = y, rest
 
-mdc = x  # Quando y == 0, x é o mdc
+mdc = x # Quando y == 0, x é o MDC
 
 if mdc == 1:
     print(f"{a} e {b} são bros!")
