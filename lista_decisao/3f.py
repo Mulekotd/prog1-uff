@@ -17,5 +17,5 @@ if is_triangle:
     elif a == b or b == c or a == c: # Se apenas dois lados forem iguais, é Isósceles
         print("Isóceles")
 else: # Caso contrário
-    # Exibo que não é possível formar um triângulo
+    # Imprime que não é possível formar um triângulo
     print("Não forma um triângulo")
