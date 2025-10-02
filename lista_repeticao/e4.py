@@ -2,7 +2,7 @@
 a = int(input())
 b = int(input())
 
-# Algoritmo de Euclides (iterativo)
+# Algoritmo de Euclides
 x = a
 y = b
 
