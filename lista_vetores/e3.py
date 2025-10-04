@@ -1,6 +1,6 @@
 n = int(input())
 a = []
-b = [0] * n # Cria o vetor B preenchido com zeros
+b = [0] * n # Inicializa o vetor B preenchido com 'n' zeros
 
 # Preenche o vetor A com as entradas
 for _ in range(n):
