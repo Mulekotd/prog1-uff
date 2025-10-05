@@ -10,5 +10,5 @@ def interleave(a, b):
     return vector
 
 
-print(interleave([1,3,5], [2,4,8])) # [1,2,3,4,5,8]
-print(interleave([1,2,3], [4,7]))   # [1,2,3,4,7]
+print(interleave([1,3,5], [2,4,8])) # Imprime [1,2,3,4,5,8]
+print(interleave([1,2,3], [4,7]))   # Imprime [1,2,3,4,7]
