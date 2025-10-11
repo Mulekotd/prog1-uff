@@ -2,7 +2,7 @@ num = int(input())
 
 for n in range(num + 1):
     for k in range(0, n + 1):
-        # Calcula n!, k!, e (n-k)! manualmente
+        # Calcula n!, k!, e (n-k)!
         fact_n = 1
         for i in range(1, n + 1):
             fact_n *= i
