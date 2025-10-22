@@ -1,22 +1,19 @@
-n = int(input())
+vetor = list(map(int, input().split()))
+tamanho = len(vetor)
 
-a = [int(input()) for _ in range(n)] # Monta o vetor A com 'n' inputs
+soma_valores = 0
+for valor in vetor:
+    soma_valores += valor
 
-# Monta o vetor B sendo o inverso do vetor A
-b = a.copy()
-b.reverse()
+# Calcula média
+media = soma_valores / tamanho
+print(f"Média = {media}")
 
-c = []
+mais_proximo = vetor[0]
+for i in range(tamanho - 1):
+    atual = vetor[i + 1]
 
-# Percorre cada elemento em B
-for curr in b:
-    total = 0 # Inicializa o somatório em 0
+    if abs(media - mais_proximo) > abs(media - atual):
+        mais_proximo = atual
 
-    for j in range(1, curr+1): # Para cada número 'j' de 1 à 'curr+1'
-        total += j # Soma 'j' ao total
-
-    c.append(total)
-
-print(f"A = {a}")
-print(f"B = {b}")
-print(f"C = {c}")
+print(f"Valor mais próximo da média = {mais_proximo}")

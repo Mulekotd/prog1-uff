@@ -1,24 +1,26 @@
-print("PROG1")
-prog1 = [int(input(f"{i}) ")) for i in range(5)]
+n = int(input()) # Indica o número de candidatos
+resultado_concurso = [input().split() for _ in range(n)]
 
-print("PROG2")
-prog2 = [int(input(f"{i}) ")) for i in range(7)]
+lista_medias = []
 
-print("PROG3")
-prog3 = [int(input(f"{i}) ")) for i in range(7)]
+# Monta a lista com as médias de cada candidato
+for vetor in resultado_concurso:
+    nome_candidato = vetor[0]
 
-irregulares = []
-count = 0
+    soma_notas = 0 # Equivalente: sum(map(int, vetor[1:4]))
+    for i in range(1, 4):
+        soma_notas += int(vetor[i])
+    
+    media = soma_notas / 3
+    lista_medias.append([nome_candidato, media])
 
-# Só 1 laço principal
-for aluno in prog1:
-    # Verifica se também está em prog2 e prog3
-    if aluno in prog2 and aluno in prog3:
-        irregulares.append(aluno)
-        count += 1
+# Ordena cresc. as médias (Bubble Sort)
+for i in range(len(lista_medias)):
+    for j in range(len(lista_medias) - 1):
+        atual, proximo = lista_medias[j][1], lista_medias[j + 1][1]
 
-# Exibe resultados
-for aluno in irregulares:
-    print(f"Aluno {aluno} irregular")
+        if atual > proximo:
+            lista_medias[j], lista_medias[j + 1] = lista_medias[j + 1], lista_medias[j]
 
-print(f"Total = {count}")
+for nome, media in lista_medias:
+    print(f"{nome} {media:.2f}")

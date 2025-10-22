@@ -1,28 +1,15 @@
-n = int(input("n? "))
+lista_telefonica = []
 
-print("A")
-a = [int(input(f"{i}) ")) for i in range(n)]
+for _ in range(100):
+    telefone = int(input("Insere: "))
+    lista_telefonica.append(telefone)
 
-print("B")
-b = [int(input(f"{i}) ")) for i in range(n)]
+    n = len(lista_telefonica)
 
-print("C")
-c = [int(input(f"{i}) ")) for i in range(n)]
+    # Percorre toda a lista várias vezes
+    for i in range(n):
+        for j in range(0, n - i - 1):
+            if lista_telefonica[j] > lista_telefonica[j + 1]:
+                lista_telefonica[j], lista_telefonica[j + 1] = lista_telefonica[j + 1], lista_telefonica[j]
 
-# Cria D já com tamanho 3*n
-d = [0] * (3 * n)
-
-i = 0  # índice para A, B e C
-j = 0  # índice para D
-
-# Preenche D alternando os elementos de A, B e C
-while i < n:
-    d[j] = a[i]
-    d[j+1] = b[i]
-    d[j+2] = c[i]
-
-    # Avança os índices
-    i += 1
-    j += 3
-
-print(f"D = {d}")
+    print(f"Agenda={lista_telefonica}")

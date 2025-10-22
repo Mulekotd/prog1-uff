@@ -1,20 +1,24 @@
-n = int(input("n?"))
+v1 = list(map(int, input().split()))
+v2 = list(map(int, input().split()))
 
-print("A")
-a = [int(input(f"{i}) ")) for i in range(n)]
+n = len(v1)
+m = len(v2)
+r = n + m
 
-print("B")
-b = [int(input(f"{i}) ")) for i in range(n)]
+v3 = [0 for _ in range(r)]
 
-print("C")
-c = [int(input(f"{i}) ")) for i in range(n)]
+maior_vetor = v1 if n >= m else v2
+menor_vetor = v2 if maior_vetor is v1 else v1
 
-d = []
+# Intercala os elementos até o fim do menor
+for i in range(len(menor_vetor)):
+    v3[2*i] = v1[i]
+    v3[2*i+1] = v2[i]
 
-# Intercala os elementos de A, B e C
-for i in range(n):
-    d.append(a[i])  # Adiciona elemento de A
-    d.append(b[i])  # Adiciona elemento de B
-    d.append(c[i])  # Adiciona elemento de C
+# Pega o restante do maior vetor
+inicio_restante = len(menor_vetor) * 2
+for j in range(len(menor_vetor), len(maior_vetor)):
+    indice = inicio_restante + (j - len(menor_vetor))
+    v3[indice] = maior_vetor[j]
 
-print(f"D = {d}")
+print(v3)
