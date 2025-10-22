@@ -15,7 +15,7 @@ for vetor in resultado_concurso:
     lista_medias.append([nome_candidato, media])
 
 # Ordena cresc. as médias (Bubble Sort)
-for i in range(len(lista_medias)):
+for _ in range(len(lista_medias)):
     for j in range(len(lista_medias) - 1):
         atual, proximo = lista_medias[j][1], lista_medias[j + 1][1]
 
