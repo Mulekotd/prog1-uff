@@ -10,6 +10,7 @@ def eh_palindromo(palavra: str) -> bool:
     resto = palavra[1:-1]
     return eh_palindromo(resto)
 
+
 print(eh_palindromo("ana")) # TRUE
 print(eh_palindromo("radar")) # TRUE
 print(eh_palindromo("python")) # FALSE
