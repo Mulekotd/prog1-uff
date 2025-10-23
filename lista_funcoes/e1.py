@@ -1,29 +1,29 @@
-def soma(a : int, b : int) -> int:
+def soma(a: int, b: int) -> int:
     return a + b
 
 
-def subtracao(a : int, b : int) -> int:
+def subtracao(a: int, b: int) -> int:
     return a - b
 
 
-def multiplicacao(a : int, b : int) -> int:
+def multiplicacao(a: int, b: int) -> int:
     return a * b
 
 
-def divisao(a : int, b : int) -> int:
+def divisao(a: int, b: int) -> int:
     return a // b # Divisão inteira
 
 
-def interface_calculadora(a : int, b : int, op : str) -> int:
+def interface_calculadora(a: int, b: int, op: str) -> int:
     match op.lower():
         case "soma":
-            return soma(a, b)
+            return soma(a,b)
         case "subtracao":
-            return subtracao(a, b)
+            return subtracao(a,b)
         case "multiplicacao":
-            return multiplicacao(a, b)
+            return multiplicacao(a,b)
         case "divisao":
-            return divisao(a, b)
+            return divisao(a,b)
 
 
 print(f"Soma = {interface_calculadora(3, 3, "soma")}")

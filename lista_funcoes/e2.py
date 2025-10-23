@@ -1,4 +1,4 @@
-def longest_increasing_sequence(arr : list = []) -> int:
+def longest_increasing_sequence(arr: list = []) -> int:
     arr_length = len(arr)
 
     if arr_length == 0:

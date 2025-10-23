@@ -1,6 +1,6 @@
 arr = [int(input()) for _ in range(20)]
 
-def modify_list(arr : list = []) -> list:
+def modify_list(arr: list = []) -> list:
     for i, curr in enumerate(arr):
         if curr < 0:
             arr[i] = 0

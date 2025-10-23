@@ -20,7 +20,7 @@ for i, valor in enumerate(lista_b):
     fatorial = 1
 
     for j in range(valor):
-        fatorial *= (j + 1)
+        fatorial *= j + 1
 
     lista_b[i] = fatorial
 

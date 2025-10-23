@@ -10,12 +10,12 @@ def suavizar(calcular_media, dados: list[int]) -> list[int|float]:
     n = len(dados)
     lista_suavizada = [0 for _ in range(n)]
 
-    # Adiciona o primeiro e último elemento de "dados" na "lista_suavizada"
+    # Adiciona o primeiro e último elemento de 'dados' na 'lista_suavizada'
     lista_suavizada[0] = dados[0]
     lista_suavizada[n-1] = dados[n-1]
 
     def suavizar_recursiva(i: int = 0) -> list[int|float]:
-        # Caso-base: Se excedemos o tamanho da lista, retornamos a lista suavizada
+        # Caso-base: se excedemos o tamanho da lista, retornamos a 'lista_suavizada'
         if ((i+2) >= n):
             return lista_suavizada
 

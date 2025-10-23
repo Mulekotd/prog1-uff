@@ -1,5 +1,5 @@
-def find_min_index(b : list, k : int) -> int:
-    min_index = k  # Começa assumindo que o mínimo está em 'k'
+def find_min_index(b: list, k: int) -> int:
+    min_index = k # Começa assumindo que o mínimo está em 'k'
 
     for i in range(k + 1, len(b)):
         if b[i] < b[min_index]:

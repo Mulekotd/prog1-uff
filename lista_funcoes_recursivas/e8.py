@@ -14,7 +14,7 @@ def soma_bignum(s1: str, s2: str) -> str:
         novo_carry = soma // 10
 
         # Chamada recursiva para o próximo dígito
-        return str(digito) + soma_recursiva(i + 1, novo_carry)
+        return str(digito) + soma_recursiva(i+1, novo_carry)
 
     return soma_recursiva(0, 0)
 
