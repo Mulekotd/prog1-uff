@@ -19,7 +19,7 @@ def soma_bignum(s1: str, s2: str) -> str:
     return soma_recursiva(0, 0)
 
 
-print(soma_bignum("321", "490"))  # "3601"
+print(soma_bignum("321", "490"))  # "712"
 print(soma_bignum("9", "1"))      # "01"
 print(soma_bignum("5", "7"))      # "21"
 print(soma_bignum("321", "49"))   # "712"
